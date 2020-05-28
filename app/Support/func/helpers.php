@@ -3,18 +3,9 @@
 
 	// Helper 檔案路徑
 	$helpers = [
-        'ajaximage.php',
-        'apn.php',
-        'checkLogin.php',
         'date.php',
         'date_change.php',
-        'dateSelector.php',
         'downFile.php',
-	    'GetSQLValueString.php',
-        'ifValue.php',
-        'logout.php',
-        'selector.php',
-        'session.php',
         'uuid.php'
 	];
 
