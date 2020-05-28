@@ -1,6 +1,6 @@
 <?php
 /*
- *  getList：取得管理員資料
+ *  checkProcess：判斷帳密是否正確
  *  insertData：新增資料
  *  updateData：修改資料
  *  deleteData：刪除資料
@@ -12,9 +12,9 @@ use App\Entities\admin;
 
 class adminRepository
 {
-    public function getList()
+    public function checkProcess($where)
     {
-        return admin::query()->where('expire_date', '>=', date('Y-m-d'))->get();
+        return admin::query()->where($where)->count();
     }
 
     public function insertData($ins_arr)
