@@ -1,4 +1,4 @@
-# Laravel binary
+# Laravel biary
 
 - PHP 7.2
 - Laravel 6
