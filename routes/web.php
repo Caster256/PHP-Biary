@@ -27,5 +27,5 @@ Route::group(['prefix' => 'login'], function() {
 
 // 進入日記系統
 Route::group(['prefix' => 'diary'], function() {
-    Route::get('/index', 'diaryController@index');
+    Route::get('', 'biaryController@index');
 });
