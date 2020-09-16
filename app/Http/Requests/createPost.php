@@ -24,7 +24,7 @@ class createPost extends FormRequest
     public function rules()
     {
         return [
-            'login_name' => 'required|min:6',
+            'login_act' => 'required|min:6',
             'login_pwd' => 'required',
             'confirm_pwd' => 'same:login_pwd'
         ];
@@ -38,8 +38,8 @@ class createPost extends FormRequest
     public function messages()
     {
         return [
-            'login_name.required' => '請輸入帳號',
-            'login_name.min' => '帳號格式錯誤',
+            'login_act.required' => '請輸入帳號',
+            'login_act.min' => '帳號格式錯誤',
             'login_pwd.required'  => '請輸入密碼',
             'confirm_pwd.same' => '請再次確認密碼',
         ];

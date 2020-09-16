@@ -17,7 +17,9 @@ class biaryController extends Controller
 
     public function index()
     {
-        $binding = [];
+        $binding = [
+            'today' => date('Y-m-d')
+        ];
 
         return View('user.biary', $binding);
     }

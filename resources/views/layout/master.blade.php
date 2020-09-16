@@ -10,8 +10,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}" media="screen">
     <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap-submenu.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/op_block.css')}}">
-    <link rel="stylesheet" type="text/css"
-          href="{{asset('fontawesome-5.10.2/css/fontawesome.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/font-awesome.min.css')}}">
     @section('style')
     @show
 </head>
@@ -24,11 +23,8 @@
         <script type="text/javascript" src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/bootstrap-submenu.js')}}"></script>
-        <script type="text/javascript" src="{{asset('fontawesome-5.10.2/js/all.js')}}"></script>
         <script>
             $(function() {
-                $('[data-submenu]').submenupicker();
-
                 $('#main_body').css('height', $(window).height());
             });
         </script>

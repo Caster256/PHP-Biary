@@ -26,14 +26,14 @@
                     <form method="post" id="login_form" action="{{asset('login/create_process')}}">
                         @csrf
                         <div class="form-group row">
-                            <label for="login_name" class="col-sm-4 col-form-label text-md-right">
+                            <label for="login_act" class="col-sm-4 col-form-label text-md-right">
                                 帳號：
                             </label>
 
                             <div class="col-md-6">
                                 <input type="text"
-                                       name="login_name"
-                                       id="login_name"
+                                       name="login_act"
+                                       id="login_act"
                                        class="form-control"
                                        maxlength="15"
                                        placeholder="請輸入帳號"

@@ -31,7 +31,7 @@ class loginController extends Controller
         $ret = $this->login->createProcess($data);
 
         if($ret) {
-            return redirect('diary');
+            return redirect('biary');
         } else {
             return redirect()->back()->withErrors('建立帳號失敗，請稍後再試！')->withInput();
         }
@@ -44,7 +44,7 @@ class loginController extends Controller
         $ret = $this->login->loginProcess($data);
 
         if($ret) {
-            return redirect('diary');
+            return redirect('biary');
         } else {
             return redirect()->back()->withErrors('帳號密碼錯誤！')->withInput();
         }
